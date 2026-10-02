@@ -1,0 +1,66 @@
+url: https://xarvian.github.io/clusterTrack/
+
+template:
+  bootstrap: 5
+
+navbar:
+  structure:
+    left:
+    - reference
+    - articles
+    - news
+    right:
+    - search
+    - github
+
+  github:
+    icon: fa-github
+    aria-label: GitHub
+    href: https://github.com/xarvian/clusterTrack
+
+reference:
+- title: Main clustering function
+  desc: High-level track clustering and post-processing.
+  contents:
+  - cluster_track
+  - aggregate_ctdf
+  - summary.ctdf
+
+- title: Core data format
+  desc: Coercion and helpers around the ctdf format.
+  contents:
+  - as_ctdf
+  - as_ctdf.data.frame
+  - as_ctdf.sf
+  - as_ctdf_track
+
+- title: Pipeline steps
+  desc: Lower-level steps used by cluster_track().
+  contents:
+  - slice_ctdf
+  - spatial_repair
+  - local_cluster_ctdf
+  - temporal_repair
+
+- title: Spatial clustering backends
+  desc: DTSCAN and time-aware DBSCAN.
+  contents:
+  - sf_dtscan
+  - tdbscan
+
+- title: Diagnostics and scoring
+  desc: Within- and between-cluster outlier scoring.
+  contents:
+  - ctdf_lof
+  - ctdf_elongation
+  - putative_cluster_trace
+
+- title: Datasets
+  desc: Example datasets shipped with the package.
+  contents:
+  - lbdo66862
+  - mini_ruff
+  - pesa56511
+  - ruff143789
+  - nola125a
+  - ruff07b5

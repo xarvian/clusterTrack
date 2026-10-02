@@ -1,0 +1,40 @@
+Package: clusterTrack
+Title: Spatiotemporal Clustering of Animal Telemetry Tracks
+Version: 0.1.5
+Authors@R: c(
+    person(
+        given = "Anonymous",
+        family = "Author",
+        role = c("aut", "cre"),
+        email = "293027538+xarvian@users.noreply.github.com"
+    )
+  )
+Description: Detects spatiotemporally distinct use sites from animal telemetry tracks. The workflow combines recursive temporal segmentation of movement tracks, local spatial clustering based on Delaunay triangulation, and iterative spatial and temporal repair steps to reduce fragmentation and separate revisits in time. The package is designed for irregularly sampled relocation data, including noisy tracking data such as ARGOS as well as high-resolution GNSS tracks. Results are returned in a lightweight 'ctdf' object built on 'data.table' and 'sf', allowing direct downstream summarization and visualization.
+Depends:
+    R (>= 4.1.0)
+Imports:
+    cli,
+    data.table,
+    dbscan,
+    sf,
+    units,
+    geometry,
+    glue,
+    dplyr,
+    forcats,
+    igraph
+Suggests:
+    ggplot2,
+    quarto,
+    roxygen2,
+    testthat (>= 2.1.0)
+VignetteBuilder:
+    quarto    
+License: GPL(>= 2)
+Encoding: UTF-8
+LazyData: true
+URL: https://xarvian.github.io/clusterTrack/
+BugReports: https://github.com/xarvian/clusterTrack/issues
+Roxygen: list(markdown = TRUE)
+Config/Needs/website: quarto
+Config/roxygen2/version: 8.0.0
