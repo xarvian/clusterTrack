@@ -30,4 +30,8 @@ extension package for `clusterTrack`.
 
 You can install the development versions from GitHub with:
 
-`remotes``::`[`install_github`](https://remotes.r-lib.org/reference/install_github.html)`(``'xarvian/clusterTrack'``)`` ``remotes``::`[`install_github`](https://remotes.r-lib.org/reference/install_github.html)`(``'xarvian/clusterTrack.Vis'``)`
+``` r
+
+remotes::install_github('xarvian/clusterTrack')
+remotes::install_github('xarvian/clusterTrack.Vis')
+```
